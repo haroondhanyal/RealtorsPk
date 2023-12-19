@@ -1,0 +1,6 @@
+{
+    "HomePageLocators": {
+
+    "home_header_text":"//button[@class='relative group flex items-center justify-center py-3 md:py-0 rounded-[6px] min-h-full bg-[#36C991] text-sm md:text-[16px] font-medium text-white px-10 cursor-pointer']"
+  }
+}
