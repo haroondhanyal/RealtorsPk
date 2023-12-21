@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-21T10:50:12.485Z",
+    "end": "2023-12-21T10:52:41.639Z",
+    "duration": 149154,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0d5ddb9f-16d9-4d63-8f68-e5577c36ad5c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_without.cy.js",
+      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_without.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3a8ff2d5-ade3-40a3-b4b1-b8602e728d2e",
+          "title": "Visit RealtorsPK Website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should visit RealtorsPK website",
+              "fullTitle": "Visit RealtorsPK Website Should visit RealtorsPK website",
+              "timedOut": null,
+              "duration": 658,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', () => {\n  return false;\n});\ntry {\n  cy.viewport(1440, 820);\n  cy.visit('https://dev.realtorspk.com');\n  cy.wait(5000);\n  cy.fixture('HomePage_Search').then(data => {\n    Main_Page.city_selected(data.city_2);\n    cy.wait(4000);\n    Main_Page.budget_selection(data.min_price, data.max_price);\n    cy.wait(4000);\n    const propertyTypeXPathsToCheck = [_Main_Home_Page.default.Main_Home_Page_Locators.house_villa, _Main_Home_Page.default.Main_Home_Page_Locators.flat, _Main_Home_Page.default.Main_Home_Page_Locators.pent_house, _Main_Home_Page.default.Main_Home_Page_Locators.farm_house, _Main_Home_Page.default.Main_Home_Page_Locators.basement, _Main_Home_Page.default.Main_Home_Page_Locators.upper_portion, _Main_Home_Page.default.Main_Home_Page_Locators.room];\n    Main_Page.property_types(propertyTypeXPathsToCheck);\n    cy.wait(3000);\n    Main_Page.search_button();\n    cy.wait(4000);\n    // Collect relevant test data\n    const testData = {\n      city: data.city_2,\n      minPrice: data.min_price,\n      maxPrice: data.max_price\n      // Add other data as needed\n    };\n    // Push the test data to the array\n    jsonData.push(testData);\n  });\n  cy.wait(2000);\n} catch (error) {\n  console.error('Error occurred: ', error.message);\n  cy.log('Error occurred: ' + error.message);\n}",
+              "err": {
+                "message": "TypeError: _fs.default.writeFileSync is not a function\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Visit RealtorsPK Website`",
+                "estack": "TypeError: _fs.default.writeFileSync is not a function\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Visit RealtorsPK Website`\n    at Context.eval (webpack://realtors/./cypress/e2e/TestCases/LoginScreen/Login_without.cy.js:133:11)",
+                "diff": null
+              },
+              "uuid": "a4838e59-4f60-419a-b5bb-c9b65f0df3be",
+              "parentUUID": "3a8ff2d5-ade3-40a3-b4b1-b8602e728d2e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a4838e59-4f60-419a-b5bb-c9b65f0df3be"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 658,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome/testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

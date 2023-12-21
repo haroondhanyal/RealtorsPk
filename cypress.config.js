@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const path = require('path');
 
 module.exports = defineConfig({
   projectId: '27asx7',
@@ -14,7 +15,7 @@ module.exports = defineConfig({
   videosFolder: 'cypress/e2e/videos',
   screenshotsFolder: 'cypress/e2e/screenshots',
 
-  pageLoadTimeout: 1200000,
+  pageLoadTimeout: 120000,
   screenshots: true,
   screenshotOnRunFailure: true,
   reporter: 'cypress-multi-reporters',
@@ -27,14 +28,12 @@ module.exports = defineConfig({
       json: true
     },    
   },
-  plugins: (on, config) => {
-    on('after:run', async (results) => {
-      const jsonFilePath = 'cypress/reports/mochawesome/testresults/mochawesome_009.json';
-      const outputCsvFilePath = 'cypress/reports/mochawesome/testresults/mochawesome_009.csv'; // Corrected file extension
+  // plugins: (on, config) => {
+  //   on('after:run', async (results) => {
+  //     const convertScriptPath = path.join(__dirname, 'cypress', 'scripts', 'convert','convertToCsv.js'); // Adjust the path as needed
 
-      // Load the conversion script from the dedicated folder
-      const convertToCsv = require('./cypress/scripts/convert/convertToCsv');
-      await convertToCsv(jsonFilePath, outputCsvFilePath);
-    });
-  }
+  //     // Run the conversion script
+  //     await cy.exec(`node ${convertScriptPath}`);
+  //   });
+  // }
 });

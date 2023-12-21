@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-report": "mochawesome-merge cypress/reports/mochawesome/testresults/*.json > cypress/reports/mochawesome/report.json && marge cypress/reports/mochawesome/report.json -f report -o cypress/reports/html && npx json2csv -i cypress/reports/mochawesome/report.json -o cypress/reports/csv/report.csv"
+
   },
   "keywords": [],
   "author": "",
@@ -14,12 +16,9 @@
     "cypress-mochawesome-reporter": "^3.7.0",
     "cypress-multi-reporters": "^1.6.4",
     "cypress-xpath": "^2.0.1",
+    "json2csv": "^6.0.0-alpha.2",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
-  },
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "json2csv": "^6.0.0-alpha.2"
   }
 }

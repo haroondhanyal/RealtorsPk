@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 2,
     "tests": 1,
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-12-21T07:54:17.018Z",
-    "end": "2023-12-21T07:55:17.668Z",
-    "duration": 60650,
+    "start": "2023-12-21T11:40:55.768Z",
+    "end": "2023-12-21T11:41:34.797Z",
+    "duration": 39029,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,68 @@
   },
   "results": [
     {
-      "uuid": "9d33bd75-67cf-4faa-8d54-425b4d245acb",
+      "uuid": "c0dc4459-4faa-4b56-ae37-2ea28b15ce80",
       "title": "",
-      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_witout.cy.js",
-      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_witout.cy.js",
+      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
+      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "2cbd39fc-5cd5-4fdc-86d3-3c96ef8a8703",
-          "title": "Visit RealtorsPK Website",
+          "uuid": "11b72e2d-659c-474b-a225-520f530659f4",
+          "title": "Login and Home Page Tests",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [
+          "tests": [],
+          "suites": [
             {
-              "title": "Should visit RealtorsPK website",
-              "fullTitle": "Visit RealtorsPK Website Should visit RealtorsPK website",
-              "timedOut": null,
-              "duration": 52540,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "Cypress.on('uncaught:exception', () => {\n  return false;\n});\ntry {\n  cy.viewport(1440, 820);\n  cy.visit('https://dev.realtorspk.com');\n  cy.wait(5000);\n  cy.fixture('HomePage_Search').then(data => {\n    Main_Page.city_selected(data.city_2);\n    cy.wait(4000);\n    Main_Page.budget_selection(data.min_price, data.max_price);\n    cy.wait(4000);\n    const propertyTypeXPathsToCheck = [_Main_Home_Page.default.Main_Home_Page_Locators.house_villa, _Main_Home_Page.default.Main_Home_Page_Locators.flat, _Main_Home_Page.default.Main_Home_Page_Locators.pent_house, _Main_Home_Page.default.Main_Home_Page_Locators.farm_house, _Main_Home_Page.default.Main_Home_Page_Locators.basement,\n    // HomePageElementsLocators.Main_Home_Page_Locators.plot,\n    _Main_Home_Page.default.Main_Home_Page_Locators.upper_portion, _Main_Home_Page.default.Main_Home_Page_Locators.room\n    // Add other XPaths as needed\n    ];\n    Main_Page.property_types(propertyTypeXPathsToCheck);\n    cy.wait(3000);\n    Main_Page.search_button();\n    cy.wait(4000);\n  });\n  cy.wait(2000);\n} catch (error) {\n  console.error('Error occurred will be:', error.message);\n  cy.log('Error occurred will be: ' + error.message);\n}",
-              "err": {},
-              "uuid": "5d4f0f8d-54fa-44fe-a993-6f0af703c47e",
-              "parentUUID": "2cbd39fc-5cd5-4fdc-86d3-3c96ef8a8703",
-              "isHook": false,
-              "skipped": false
+              "uuid": "cf43abe3-d769-4a7c-9195-4eac09001dee",
+              "title": "Home Page Tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should redirect to the Home Page",
+                  "fullTitle": "Login and Home Page Tests Home Page Tests Should redirect to the Home Page",
+                  "timedOut": null,
+                  "duration": 34665,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "HomePage_Elements.home_header();\n// Add any additional checks/assertions related to the Home Page here",
+                  "err": {},
+                  "uuid": "728c7a0f-af84-4a77-ad01-47725c7fc8d5",
+                  "parentUUID": "cf43abe3-d769-4a7c-9195-4eac09001dee",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "728c7a0f-af84-4a77-ad01-47725c7fc8d5"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 34665,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
             }
           ],
-          "suites": [],
-          "passes": [
-            "5d4f0f8d-54fa-44fe-a993-6f0af703c47e"
-          ],
+          "passes": [],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 52540,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
