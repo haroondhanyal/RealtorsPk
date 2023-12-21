@@ -1,24 +1,25 @@
+
+
+
 {
-    "Main_Home_Page":{
+    "Main_Home_Page_Locators":{
         "city_dropdown":"//div[@class=' css-1xc3v61-indicatorContainer']",
-        "budget_dropdown":"button[class='w-full relative text-[14px] grid items-center border-t text-[#666] border-[#ddd] border-b h-full min-h-[52px] justify-start truncate px-[16px] pr-[30px] bg-white']",
+        "budget_dropdown":"//button[@id='dropdown-selection']",
         "property_type_dropdown":"//button[normalize-space()='Property Type']",
         "search_button":"//button[normalize-space()='Search']",
         "bar_low":"//div[contains(@data-lower,'true')]",
-        "bar_high":" //div[contains(@data-upper,'true')]",
+        "bar_high":"//div[contains(@data-upper,'true')]",
         "budget_done_button":"//button[normalize-space()='Done']",
         "budget_reset_button":"//button[normalize-space()='Reset']",
-        "house_villa":"id attribute is not available for this element",
+        "house_villa":"//button[normalize-space()='House/Villa']",
         "flat":"//button[normalize-space()='Flat']",
         "pent_house":"//button[normalize-space()='Pent House']",
         "farm_house":"//button[normalize-space()='Farm House']",
         "plot":"//body//div[@id='__next']//div[@class='border-t-//div[1]//button[1]",
         "basement":"//button[normalize-space()='Basement']",
         "upper_portion":"//button[normalize-space()='Upper Portion']",
-        "room":" //button[normalize-space()='Room']"
-        
-
-        
-    
+        "room":" //button[normalize-space()='Room']",
+        "min_price":"//input[@placeholder='Min Price']",
+        "max_price": "//input[@placeholder='Min Price']"
     }
 }

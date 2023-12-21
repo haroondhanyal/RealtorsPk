@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-21T05:48:04.451Z",
+    "end": "2023-12-21T05:48:42.694Z",
+    "duration": 38243,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37d9b5e4-9a5d-47f6-b4cb-d931038656c2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
+      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6b017093-3d72-46e0-91fd-827b01bb9572",
+          "title": "Login and Home Page Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "02de3c8b-31e2-4040-a58b-7a0e2acea763",
+              "title": "Home Page Tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should redirect to the Home Page",
+                  "fullTitle": "Login and Home Page Tests Home Page Tests Should redirect to the Home Page",
+                  "timedOut": null,
+                  "duration": 33766,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "HomePage_Elements.home_header();\n// Add any additional checks/assertions related to the Home Page here",
+                  "err": {},
+                  "uuid": "c88fc7bc-cb42-4fa6-9b1d-53623ab6df95",
+                  "parentUUID": "02de3c8b-31e2-4040-a58b-7a0e2acea763",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c88fc7bc-cb42-4fa6-9b1d-53623ab6df95"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 33766,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome/testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

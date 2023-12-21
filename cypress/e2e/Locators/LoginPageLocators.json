@@ -1,8 +1,7 @@
 {
     "LoginPageLocators": {
       "email_text": "//input[@placeholder='Enter Email']",
-      "password_text": "//input[@placeholder='Password']",
-    
+      "password_text": "//input[@placeholder='Password']",  
       "LoginButton_text": " //button[normalize-space()='Continue']"
     }
   }

@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-21T05:44:23.536Z",
+    "end": "2023-12-21T05:44:24.788Z",
+    "duration": 1252,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2aa2f29-3042-4722-acd5-148a9aedf5e6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
+      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f499cb8-6740-4204-b796-60f57fa0e1fd",
+          "title": "Login and Home Page Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "8001c0ff-c6bb-4f3e-8f4c-9c5efa4aaf2d",
+              "title": "Home Page Tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should redirect to the Home Page",
+                  "fullTitle": "Login and Home Page Tests Home Page Tests Should redirect to the Home Page",
+                  "timedOut": null,
+                  "duration": 1103,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\TestCases\\\\LoginScreen\\\\Login_With_Credentials.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Login_With_Credentials.cy.js\\\\Login and Home Page Tests -- Should redirect to the Home Page -- before each hook (failed).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "HomePage_Elements.home_header();\n// Add any additional checks/assertions related to the Home Page here",
+                  "err": {
+                    "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.realtorspk.com/commercial/auth/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND dev.realtorspk.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login and Home Page Tests`",
+                    "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.realtorspk.com/commercial/auth/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND dev.realtorspk.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login and Home Page Tests`\n    at <unknown> (http://localhost:63091/__cypress/runner/cypress_runner.js:131400:74)\n    at visitFailedByErr (http://localhost:63091/__cypress/runner/cypress_runner.js:130792:12)\n    at <unknown> (http://localhost:63091/__cypress/runner/cypress_runner.js:131399:11)\n    at tryCatcher (http://localhost:63091/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63091/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:63091/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:63091/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:63091/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:63091/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:63091/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:63091/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:63091/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://realtors/./cypress/e2e/TestCases/LoginScreen/Login_With_Credentials.cy.js:15:11)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND dev.realtorspk.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:108:26)",
+                    "diff": null
+                  },
+                  "uuid": "dd7a9144-6664-449a-b5c6-b7e6d88950f2",
+                  "parentUUID": "8001c0ff-c6bb-4f3e-8f4c-9c5efa4aaf2d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "dd7a9144-6664-449a-b5c6-b7e6d88950f2"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 1103,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome/testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

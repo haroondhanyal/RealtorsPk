@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-21T05:48:46.914Z",
+    "end": "2023-12-21T05:52:09.037Z",
+    "duration": 202123,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9385802-f61f-4b8f-88b7-0c0ef0c90d14",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_without.cy.js",
+      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_without.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ef181cd-369e-43db-84a9-1555597413f8",
+          "title": "Visit RealtorsPK Website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should visit RealtorsPK website",
+              "fullTitle": "Visit RealtorsPK Website Should visit RealtorsPK website",
+              "timedOut": null,
+              "duration": 194654,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', () => {\n  return false;\n});\ntry {\n  cy.viewport(1440, 820);\n  cy.visit('https://dev.realtorspk.com');\n  cy.wait(5000);\n  cy.fixture('HomePage_Search').then(data => {\n    Main_Page.city_selected(data.city_2);\n    cy.wait(4000);\n    Main_Page.budget_selection(data.min_price, data.max_price);\n    cy.wait(4000);\n    const propertyTypeXPathsToCheck = [_Main_Home_Page.default.Main_Home_Page_Locators.house_villa, _Main_Home_Page.default.Main_Home_Page_Locators.flat, _Main_Home_Page.default.Main_Home_Page_Locators.pent_house, _Main_Home_Page.default.Main_Home_Page_Locators.farm_house, _Main_Home_Page.default.Main_Home_Page_Locators.basement,\n    // HomePageElementsLocators.Main_Home_Page_Locators.plot,\n    _Main_Home_Page.default.Main_Home_Page_Locators.upper_portion, _Main_Home_Page.default.Main_Home_Page_Locators.room\n    // Add other XPaths as needed\n    ];\n    Main_Page.property_types(propertyTypeXPathsToCheck);\n    cy.wait(3000);\n    Main_Page.search_button();\n    cy.wait(4000);\n  });\n  cy.wait(2000);\n} catch (error) {\n  console.error('Error occurred will be:', error.message);\n  cy.log('Error occurred will be: ' + error.message);\n}",
+              "err": {
+                "message": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:130429:64)\n    at <unknown> (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:130741:16)\n    at tryCatcher (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1807:23)\n    at <unknown> (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:4186:41)\n    at tryCatcher (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://realtors/./cypress/e2e/TestCases/LoginScreen/Login_witout.cy.js:52:19)",
+                "diff": null
+              },
+              "uuid": "9289041e-f151-42d8-9b64-95d58ec28762",
+              "parentUUID": "4ef181cd-369e-43db-84a9-1555597413f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9289041e-f151-42d8-9b64-95d58ec28762"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 194654,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mochawesome/testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
