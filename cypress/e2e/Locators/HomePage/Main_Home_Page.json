@@ -1,25 +1,23 @@
-
-
-
 {
-    "Main_Home_Page_Locators":{
-        "city_dropdown":"//div[@class=' css-1xc3v61-indicatorContainer']",
-        "budget_dropdown":"//button[@id='dropdown-selection']",
-        "property_type_dropdown":"//button[normalize-space()='Property Type']",
-        "search_button":"//button[normalize-space()='Search']",
-        "bar_low":"//div[contains(@data-lower,'true')]",
-        "bar_high":"//div[contains(@data-upper,'true')]",
-        "budget_done_button":"//button[normalize-space()='Done']",
-        "budget_reset_button":"//button[normalize-space()='Reset']",
-        "house_villa":"//button[normalize-space()='House/Villa']",
-        "flat":"//button[normalize-space()='Flat']",
-        "pent_house":"//button[normalize-space()='Pent House']",
-        "farm_house":"//button[normalize-space()='Farm House']",
-        "plot":"//body//div[@id='__next']//div[@class='border-t-//div[1]//button[1]",
-        "basement":"//button[normalize-space()='Basement']",
-        "upper_portion":"//button[normalize-space()='Upper Portion']",
-        "room":" //button[normalize-space()='Room']",
-        "min_price":"//input[@placeholder='Min Price']",
-        "max_price": "//input[@placeholder='Min Price']"
-    }
+  "Main_Home_Page_Locators": {
+    "city_dropdown": "//div[@class=' css-1xc3v61-indicatorContainer']",
+    "budget_dropdown": "//button[@id='dropdown-selection']",
+    "property_type_dropdown": "//button[normalize-space()='Property Type']",
+    "search_button": "//button[normalize-space()='Search']",
+    "bar_low": "//div[contains(@data-lower,'true')]",
+    "bar_high": "//div[contains(@data-upper,'true')]",
+    "budget_done_button": "//button[normalize-space()='Done']",
+    "budget_reset_button": "//button[normalize-space()='Reset']",
+    "house_villa": "//button[normalize-space()='House/Villa']",
+    "flat": "//button[normalize-space()='Flat']",
+    "appartment": "//button[normalize-space()='Apartment']",
+    "pent_house": "//button[normalize-space()='Pent House']",
+    "farm_house": "//button[normalize-space()='Farm House']",
+    "plot": "//div[@id='__next']//div[@class='relative z-[2]']//div[5]//button[1]",
+    "basement": "//button[normalize-space()='Basement']",
+    "upper_portion": "//button[normalize-space()='Upper Portion']",
+    "ground_floor": "//button[normalize-space()='Ground Floor']//span[contains(@class,'absolute left-[7px] top-[7px] rounded-[3px] w-[13px] h-[13px] border-[1px]')]",
+    "min_price": "//input[@placeholder='Min Price']",
+    "max_price": "//input[@placeholder='Min Price']"
+  }
 }
