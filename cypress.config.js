@@ -18,17 +18,19 @@ module.exports = defineConfig({
 
   pageLoadTimeout: 120000,
   screenshots: true,
+
   screenshotOnRunFailure: true,
   reporter: 'cypress-multi-reporters',
   reporterOptions: {
     reporterEnabled: 'mochawesome',
     mochawesomeReporterOptions: {
       reportDir: 'cypress/reports/mochawesome/testresults',
-      overwrite: false,
+      overwrite: true,
       html: true,
       json: true
     },
   },
+  "trashAssetsBeforeRuns": false,
   plugins: (on, config) => {
     on('after:run', async (results) => {
       const jsonFilePath = 'cypress/reports/mochawesome/testresults/mochawesome_009.json';

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709208485773' stop='1709208543491'>
+    <name>Visit RealtorsPK Website</name>
+    <title>Visit RealtorsPK Website</title>
+    <test-cases>
+        <test-case start='1709208485773' status='passed' stop='1709208543491'>
+            <name>Should visit RealtorsPK website</name>
+            <title>Should visit RealtorsPK website</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

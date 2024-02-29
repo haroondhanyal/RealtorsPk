@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709205038438' stop='1709205071628'>
+    <name>Login and Home Page Tests Home Page Tests</name>
+    <title>Login and Home Page Tests Home Page Tests</title>
+    <test-cases>
+        <test-case start='1709205038438' status='passed' stop='1709205071628'>
+            <name>Should redirect to the Home Page</name>
+            <title>Should redirect to the Home Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

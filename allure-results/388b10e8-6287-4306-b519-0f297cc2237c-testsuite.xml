@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709208597534' stop='1709208708535'>
+    <name>User Wants to Login in to Dashboard with Valid Credentials</name>
+    <title>User Wants to Login in to Dashboard with Valid Credentials</title>
+    <test-cases>
+        <test-case start='1709208597534' status='broken' stop='1709208704519'>
+            <name>should Login Successfully and Dashboard is Visible</name>
+            <title>should Login Successfully and Dashboard is Visible</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>UserDash_Login.Dashboard_Button() is undefined</message>
+                <stack-trace>TypeError: UserDash_Login.Dashboard_Button() is undefined
+                at &lt;unknown> (webpack://realtors/./cypress/e2e/TestCases/Dashboard/UserDashboard_LoginTest.cy.js:59:23)
+                at __webpack_modules__&lt;/setRunnable/runnable.fn (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:138559:43)
+                at callFn (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:157151:21)
+                at __webpack_modules__&lt;/Runnable.prototype.run (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:157138:13)
+                at __webpack_modules__&lt;/create/onRunnableRun (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:163062:30)
+                at finallyHandler (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:4072:23)
+                at tryCatcher (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1807:23)
+                at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromiseFromHandler (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1519:31)
+                at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1576:18)
+                at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1621:10)
+                at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:1701:18)
+                at _drainQueueStep (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2407:12)
+                at _drainQueue (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2400:24)
+                at __webpack_modules__&lt;/Async.prototype._drainQueues (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2416:16)
+                at __webpack_modules__&lt;/Async/this.drainQueues (https://dev.realtorspk.com/__cypress/runner/cypress_runner.js:2286:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
