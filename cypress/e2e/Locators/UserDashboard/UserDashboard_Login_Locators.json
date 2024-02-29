@@ -1,0 +1,12 @@
+{
+  "UserDashboard_LoginLocators": {
+    "SigninButton": "//a[normalize-space()='Sign In']",
+    "User_Email": "//input[@placeholder='Enter Email']",
+    "User_Password": "//input[@placeholder='Password']",
+    "Continue_Button": "//button[normalize-space()='Continue']",
+
+    "User_Icon": "(//img[@alt='Icon'])[1]",
+    "Dashboard_Button": "//a[normalize-space()='Dashboard']",
+    "Add_Credit": "//button[normalize-space()='Add Credits']"
+  }
+}

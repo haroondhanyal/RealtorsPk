@@ -1,0 +1,10 @@
+{
+  "UserDashboard_Logout": {
+    "SigninButton": "//a[normalize-space()='Sign In']",
+    "LogOut_Dashboard": "//button[normalize-space()='Log out']",
+
+    "Continue_Button": "//button[normalize-space()='Continue']",
+    "User_Icon": "//span[@class='relative -top-//span//img[@alt='Icon']",
+    "Dashboard_Button": "//button[normalize-space()='Dashboard']"
+  }
+}

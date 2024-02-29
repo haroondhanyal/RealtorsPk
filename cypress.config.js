@@ -1,4 +1,6 @@
-const { defineConfig } = require("cypress");
+const {
+  defineConfig
+} = require("cypress");
 
 module.exports = defineConfig({
   projectId: '27asx7',
@@ -10,7 +12,7 @@ module.exports = defineConfig({
     },
   },
   fixturesFolder: 'cypress/e2e/fixtures',
-  video: true, 
+  video: true,
   videosFolder: 'cypress/e2e/videos',
   screenshotsFolder: 'cypress/e2e/screenshots',
 
@@ -25,7 +27,7 @@ module.exports = defineConfig({
       overwrite: false,
       html: true,
       json: true
-    },    
+    },
   },
   plugins: (on, config) => {
     on('after:run', async (results) => {

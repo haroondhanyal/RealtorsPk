@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Feb 28 11:25:16 PKT 2024","Wed Feb 28 11:26:02 PKT 2024","45878","","Visit RealtorsPK Website","","Visit RealtorsPK Website","Should visit RealtorsPK website","Should visit RealtorsPK website",""
+"passed","Wed Feb 28 11:24:43 PKT 2024","Wed Feb 28 11:25:14 PKT 2024","30770","","Login and Home Page Tests Home Page Tests","","Login and Home Page Tests Home Page Tests","Should redirect to the Home Page","Should redirect to the Home Page",""
+"broken","Wed Feb 28 11:24:05 PKT 2024","Wed Feb 28 11:24:35 PKT 2024","30224","","User Wants to Login in to Dashboard with Valid Credentials","","User Wants to Login in to Dashboard with Valid Credentials","should Login Successfully and Dashboard is Visible","should Login Successfully and Dashboard is Visible",""
