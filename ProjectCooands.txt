@@ -1,0 +1,18 @@
+npm run test:all-browsers       
+
+/// it will run project on all browsers
+
+one by one run use 
+npm run browser:chrome
+npm run browser:firefox
+npm run browser:electron
+
+
+// genrate allure report 
+/// Allure Report will be genrated after the test runs 
+npm run report:allure
+
+/// npm run cypress
+It runs the project in terminal
+// npm cypress open
+Open the Cypress we will then run our report

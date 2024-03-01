@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709270599417' stop='1709270632229'>
+    <name>User Wants to Login in to Dashboard with Valid Credentials</name>
+    <title>User Wants to Login in to Dashboard with Valid Credentials</title>
+    <test-cases>
+        <test-case start='1709270599418' status='broken' stop='1709270632208'>
+            <name>should Login Successfully and Dashboard is Visible</name>
+            <title>should Login Successfully and Dashboard is Visible</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'should')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'should')
+                    at Context.eval (webpack://realtors/./cypress/e2e/TestCases/Dashboard/UserDashboard_LoginTest.cy.js:59:42)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
