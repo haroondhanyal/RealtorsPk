@@ -16,3 +16,10 @@ npm run report:allure
 It runs the project in terminal
 // npm cypress open
 Open the Cypress we will then run our report
+
+
+/// For Push the Code to the Git hub use this 
+git add .
+git commit -m "Text Files added here"
+git pull origin main
+git push origin main
