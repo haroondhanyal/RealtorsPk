@@ -8,8 +8,8 @@ npm run browser:firefox
 npm run browser:electron
 
 
-// genrate allure report 
-/// Allure Report will be genrated after the test runs 
+// generate allure report 
+/// Allure Report will be generated after the test runs 
 npm run report:allure
 
 /// npm run cypress
@@ -23,3 +23,7 @@ git add .
 git commit -m "Text Files added here"
 git pull origin main
 git push origin main
+
+
+// and Clone or pull that git code to your Repos
+

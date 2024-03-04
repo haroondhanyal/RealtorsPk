@@ -1,7 +1,7 @@
 {
   "name": "realtors",
   "version": "1.0.0",
-  "description": "",
+  "description": "I have made  this project with Cypress. USed a POM structure in it.\r Genrate the Allure Report which show detail of my test Cases Pass and Fails.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,5 +29,13 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "json2csv": "^6.0.0-alpha.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haroondhanyal/RealtorsPk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haroondhanyal/RealtorsPk/issues"
+  },
+  "homepage": "https://github.com/haroondhanyal/RealtorsPk#readme"
 }
