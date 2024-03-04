@@ -26,4 +26,6 @@ git push origin main
 
 
 // and Clone or pull that git code to your Repos
+ git branch 
+ git pull origin main /// will fetch changes to the system 
 
