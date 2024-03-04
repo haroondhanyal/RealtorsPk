@@ -32,4 +32,8 @@ export class UserDashboard_Login {
         cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Add_Credit).click();
         cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
     }
+    Cancel_Credit_Req() {
+        cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Credit_Req_Cancel).click();
+        cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
+    }
 }

@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709545732279' stop='1709545736436'>
+    <name>Checking the New tab</name>
+    <title>Checking the New tab</title>
+    <test-cases>
+        <test-case start='1709545732279' status='broken' stop='1709545736421'>
+            <name>New tab for the Google</name>
+            <title>New tab for the Google</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>The following error originated from your application code, not from Cypress.
+                
+                  > Script error.
+                
+                Cypress detected that an uncaught error was thrown from a cross origin script.
+                
+                We cannot provide you the stack trace, line number, or file where this error occurred.
+                
+                Check your Developer Tools Console for the actual error - it should be printed there.
+                
+                It's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.
+                
+                When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+                
+                This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+                
+                https://on.cypress.io/uncaught-exception-from-application
+                
+                https://on.cypress.io/cross-origin-script-error</message>
+                <stack-trace>Error: The following error originated from your application code, not from Cypress.
+                
+                  > Script error.
+                
+                Cypress detected that an uncaught error was thrown from a cross origin script.
+                
+                We cannot provide you the stack trace, line number, or file where this error occurred.
+                
+                Check your Developer Tools Console for the actual error - it should be printed there.
+                
+                It's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.
+                
+                When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+                
+                This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+                
+                https://on.cypress.io/uncaught-exception-from-application
+                
+                https://on.cypress.io/cross-origin-script-error
+                    at Context.eval (webpack://realtors/./cypress/e2e/TestCases/Run.cy.js:5:11)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

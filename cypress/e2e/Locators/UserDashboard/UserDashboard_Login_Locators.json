@@ -7,6 +7,8 @@
 
     "User_Icon": "(//img[@alt='Icon'])[1]",
     "Dashboard_Button": "//a[normalize-space()='Dashboard']",
-    "Add_Credit": "//button[normalize-space()='Add Credits']"
+    "Add_Credit": "//button[normalize-space()='Add Credits']",
+    "Credit_Req_Cancel": "//button[normalize-space()='Cancel']",
+    "Submit_Request": "//button[normalize-space()='Submit Request']"
   }
 }

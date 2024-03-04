@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709545746692' stop='1709545763268'>
+    <name>Checking the New tab</name>
+    <title>Checking the New tab</title>
+    <test-cases>
+        <test-case start='1709545746692' status='broken' stop='1709545762697'>
+            <name>New tab for the Google</name>
+            <title>New tab for the Google</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.origin()` failed to create a spec bridge to communicate with the specified origin. This can happen when you attempt to create a spec bridge to an insecure (http) frame from a secure (https) frame.
+                
+                Check your Developer Tools Console for the actual error - it should be printed there.
+                
+                https://on.cypress.io/origin</message>
+                <stack-trace>CypressError: `cy.origin()` failed to create a spec bridge to communicate with the specified origin. This can happen when you attempt to create a spec bridge to an insecure (http) frame from a secure (https) frame.
+                
+                Check your Developer Tools Console for the actual error - it should be printed there.
+                
+                https://on.cypress.io/origin
+                at cypressErr (https://www.google.com/__cypress/runner/cypress_runner.js:75257:18)
+                at errByPath (https://www.google.com/__cypress/runner/cypress_runner.js:75312:10)
+                at __webpack_modules__&lt;/__WEBPACK_DEFAULT_EXPORT__/origin/&lt;/timeoutId&lt; (https://www.google.com/__cypress/runner/cypress_runner.js:120666:80)
+                From Your Spec Code:
+                    at  (webpack://realtors/./cypress/e2e/TestCases/Run.cy.js:5:11)
+                    at __webpack_modules__&lt;/setRunnable/runnable.fn (https://www.google.com/__cypress/runner/cypress_runner.js:138559:43)
+                    at callFn (https://www.google.com/__cypress/runner/cypress_runner.js:157151:21)
+                    at __webpack_modules__&lt;/Runnable.prototype.run (https://www.google.com/__cypress/runner/cypress_runner.js:157138:13)
+                    at __webpack_modules__&lt;/create/onRunnableRun (https://www.google.com/__cypress/runner/cypress_runner.js:163062:30)
+                    at finallyHandler (https://www.google.com/__cypress/runner/cypress_runner.js:4072:23)
+                    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1589:21)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._resolveCallback (https://www.google.com/__cypress/runner/cypress_runner.js:1439:57)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1531:17)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)
+                    at __webpack_modules__&lt;/module.exports/PromiseArray.prototype._resolve (https://www.google.com/__cypress/runner/cypress_runner.js:2932:19)
+                    at __webpack_modules__&lt;/module.exports/PromiseArray.prototype._promiseFulfilled (https://www.google.com/__cypress/runner/cypress_runner.js:2950:14)
+                    at __webpack_modules__&lt;/module.exports/PromiseArray.prototype._iterate (https://www.google.com/__cypress/runner/cypress_runner.js:2920:31)
+                    at init (https://www.google.com/__cypress/runner/cypress_runner.js:2884:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1573:21)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)
+                    at __webpack_modules__&lt;/module.exports/PromiseArray.prototype._resolve (https://www.google.com/__cypress/runner/cypress_runner.js:2932:19)
+                    at __webpack_modules__&lt;/module.exports/PromiseArray.prototype._promiseFulfilled (https://www.google.com/__cypress/runner/cypress_runner.js:2950:14)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1581:26)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)
+                    at __webpack_modules__&lt;/module.exports/PromiseArray.prototype._resolve (https://www.google.com/__cypress/runner/cypress_runner.js:2932:19)
+                    at __webpack_modules__&lt;/module.exports/MappingPromiseArray.prototype._promiseFulfilled (https://www.google.com/__cypress/runner/cypress_runner.js:4987:18)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1581:26)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)
+                    at __webpack_modules__&lt;/module.exports/Promise.prototype._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)
+                    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:2407:12)
+                    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:2400:24)
+                    at __webpack_modules__&lt;/Async.prototype._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2416:16)
+                    at __webpack_modules__&lt;/Async/this.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2286:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
