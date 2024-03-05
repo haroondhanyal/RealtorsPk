@@ -24,7 +24,7 @@ describe('Visit RealtorsPK Website', () => {
         });
 
         try {
-            cy.viewport(1440, 820);
+            // cy.viewport(1440, 820);     // I am using Customized Commands
             cy.visit('https://dev.realtorspk.com');
             cy.wait(5000);
 

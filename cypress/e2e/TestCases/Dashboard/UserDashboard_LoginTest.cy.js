@@ -17,7 +17,8 @@ describe("User Wants to Login in to Dashboard with Valid Credentials", () => {
     });
 
     beforeEach(() => {
-        cy.viewport(1280, 820)
+        /// Already set Customized
+        // cy.viewport(1280, 820)
         cy.visit("https://dev.realtorspk.com/")
         cy.wait(3000);
         try {
@@ -53,7 +54,7 @@ describe("User Wants to Login in to Dashboard with Valid Credentials", () => {
     });
     //// invoke method is not working so i have left that
 
-    it("should Login Successfully and Dashboard is Visible", () => {
+    it("Should  Apply the Login Successfully and Dashboard is Visible", () => {
         // Log the value returned by UserDash_Login.Dashboard_Button()
         cy.log('Before invoking removeAttr');
         /// Actually i have just used this direct xpath because it is not working so directly i will pass Xpath 
@@ -71,8 +72,14 @@ describe("User Wants to Login in to Dashboard with Valid Credentials", () => {
         UserDash_Login.AddCredit();
 
         UserDash_Login.Cancel_Credit_Req();
+        UserDash_Login.AgentBoard_Commercial();
+        UserDash_Login.Commercial_Property_Selection();
+        UserDash_Login.Arrow_Selection();
+        UserDash_Login.DropDown_Selection();
+        UserDash_Login.Selection_Property();
 
-        // Check the value in the browser console
+
+        // Check the value in the browser console 
     });
 
 

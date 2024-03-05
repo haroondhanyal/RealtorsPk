@@ -36,4 +36,29 @@ export class UserDashboard_Login {
         cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Credit_Req_Cancel).click();
         cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
     }
+    AgentBoard_Commercial() {
+        cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Agent_Dashboard_Commercial).click();
+        cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
+    }
+    Commercial_Property_Selection() {
+        cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Commercial_Property_Selection).click();
+        cy.wait(3000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
+    }
+    Arrow_Selection() {
+        cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Arrow_Selection).click();
+        cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
+    }
+
+    DropDown_Selection() {
+        cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Drop_Selection).click();
+        cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
+    }
+    Selection_Property() {
+        cy.xpath(User_Dashboard_Login_Locators.UserDashboard_LoginLocators.Selection_Prop).click();
+        cy.wait(2000); // Consider removing this wait or replacing it with a Cypress command that waits for an element to appear
+    }
+
+    //th[normalize-space()='Created at']
+    //td[normalize-space()='Mon, 12-Feb-24'
+
 }

@@ -9,6 +9,11 @@
     "Dashboard_Button": "//a[normalize-space()='Dashboard']",
     "Add_Credit": "//button[normalize-space()='Add Credits']",
     "Credit_Req_Cancel": "//button[normalize-space()='Cancel']",
-    "Submit_Request": "//button[normalize-space()='Submit Request']"
+    "Submit_Request": "//button[normalize-space()='Submit Request']",
+    "Agent_Dashboard_Commercial": "//button[normalize-space()='Commercial']",
+    "Commercial_Property_Selection": "//div[@id='sidebar-items-Commercial']//button[contains(@type,'button')][normalize-space()='Properties']",
+    "Drop_Selection": "//img[@alt='Arrow Down']",
+    "Selection_Prop": "//th[normalize-space()='Created at']",
+    "Arrow_Selection": "//div[@class=' css-hlgwow']"
   }
 }

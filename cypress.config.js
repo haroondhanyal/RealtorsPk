@@ -3,7 +3,10 @@ const {
 } = require("cypress");
 
 module.exports = defineConfig({
+
   projectId: '27asx7',
+  viewportWidth: 1280, // Adjusted viewport width
+  viewportHeight: 800,
   // reporter: 'cypress-mochawesome-reporter',
   e2e: {
     setupNodeEvents(on, config) {
