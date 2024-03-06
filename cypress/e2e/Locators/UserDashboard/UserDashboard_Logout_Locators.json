@@ -1,10 +1,11 @@
 {
-  "UserDashboard_Logout": {
+  "UserDashboard_LogOutLocators": {
     "SigninButton": "//a[normalize-space()='Sign In']",
-    "LogOut_Dashboard": "//button[normalize-space()='Log out']",
-
+    "User_Email": "//input[@placeholder='Enter Email']",
+    "User_Password": "//input[@placeholder='Password']",
     "Continue_Button": "//button[normalize-space()='Continue']",
-    "User_Icon": "//span[@class='relative -top-//span//img[@alt='Icon']",
-    "Dashboard_Button": "//button[normalize-space()='Dashboard']"
+
+    "User_Icon": "(//img[@alt='Icon'])[1]",
+    "User_LogOut": "//button[normalize-space()='Log out']"
   }
 }

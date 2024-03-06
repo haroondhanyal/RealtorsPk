@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 2,
+    "suites": 1,
     "tests": 1,
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-12-20T15:27:09.995Z",
-    "end": "2023-12-20T15:28:07.295Z",
-    "duration": 57300,
+    "start": "2024-03-05T06:46:31.032Z",
+    "end": "2024-03-05T06:47:17.364Z",
+    "duration": 46332,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,68 +18,49 @@
   },
   "results": [
     {
-      "uuid": "cab02843-46bf-4d45-b2ce-2677dc432880",
+      "uuid": "ed05ea2d-4319-4af2-bcf1-999b1b16baec",
       "title": "",
-      "fullFile": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
-      "file": "cypress\\e2e\\TestCases\\LoginScreen\\Login_With_Credentials.cy.js",
+      "fullFile": "cypress/e2e/TestCases/LoginScreen/Login_without.cy.js",
+      "file": "cypress/e2e/TestCases/LoginScreen/Login_without.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "3b94aece-c8da-443d-b28f-2c857a8bfafe",
-          "title": "Login and Home Page Tests",
+          "uuid": "3bdeb06f-18d5-4717-850e-d4855c563043",
+          "title": "Visit RealtorsPK Website",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [],
-          "suites": [
+          "tests": [
             {
-              "uuid": "c8674675-94af-4af6-b75b-9e875f13407e",
-              "title": "Home Page Tests",
-              "fullFile": "",
-              "file": "",
-              "beforeHooks": [],
-              "afterHooks": [],
-              "tests": [
-                {
-                  "title": "Should redirect to the Home Page",
-                  "fullTitle": "Login and Home Page Tests Home Page Tests Should redirect to the Home Page",
-                  "timedOut": null,
-                  "duration": 50104,
-                  "state": "passed",
-                  "speed": "slow",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "HomePage_Elements.home_header();\n// Add any additional checks/assertions related to the Home Page here",
-                  "err": {},
-                  "uuid": "b634f1bf-9942-40a6-8b53-4313e86ec0b9",
-                  "parentUUID": "c8674675-94af-4af6-b75b-9e875f13407e",
-                  "isHook": false,
-                  "skipped": false
-                }
-              ],
-              "suites": [],
-              "passes": [
-                "b634f1bf-9942-40a6-8b53-4313e86ec0b9"
-              ],
-              "failures": [],
-              "pending": [],
-              "skipped": [],
-              "duration": 50104,
-              "root": false,
-              "rootEmpty": false,
-              "_timeout": 2000
+              "title": "Should visit RealtorsPK website",
+              "fullTitle": "Visit RealtorsPK Website Should visit RealtorsPK website",
+              "timedOut": null,
+              "duration": 44388,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', () => {\n  return false;\n});\ntry {\n  // cy.viewport(1440, 820);     // I am using Customized Commands\n  cy.visit('https://dev.realtorspk.com');\n  cy.wait(5000);\n  cy.fixture('HomePage_Search').then(data => {\n    Main_Page.city_selected(data.city_2);\n    cy.wait(4000);\n    Main_Page.budget_selection(data.min_price, data.max_price);\n    cy.wait(9000);\n    const propertyTypeXPathsToCheck = [_Main_Home_Page.default.Main_Home_Page_Locators.house_villa, _Main_Home_Page.default.Main_Home_Page_Locators.appartment, _Main_Home_Page.default.Main_Home_Page_Locators.pent_house, _Main_Home_Page.default.Main_Home_Page_Locators.farm_house, _Main_Home_Page.default.Main_Home_Page_Locators.basement, _Main_Home_Page.default.Main_Home_Page_Locators.plot, _Main_Home_Page.default.Main_Home_Page_Locators.upper_portion, _Main_Home_Page.default.Main_Home_Page_Locators.ground_floor\n    // Add other XPaths as needed\n    ];\n    Main_Page.property_types(propertyTypeXPathsToCheck);\n    cy.wait(3000);\n    Main_Page.search_button();\n    cy.wait(4000);\n  });\n  cy.wait(2000);\n} catch (error) {\n  console.error('Error occurred will be:', error.message);\n  cy.log('Error occurred will be: ' + error.message);\n}",
+              "err": {},
+              "uuid": "eaf242d7-0dcd-476d-bcbf-2af0c2f7e072",
+              "parentUUID": "3bdeb06f-18d5-4717-850e-d4855c563043",
+              "isHook": false,
+              "skipped": false
             }
           ],
-          "passes": [],
+          "suites": [],
+          "passes": [
+            "eaf242d7-0dcd-476d-bcbf-2af0c2f7e072"
+          ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 44388,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -103,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -115,8 +96,8 @@
       "options": {
         "id": "default",
         "reportDir": "cypress/reports/mochawesome/testresults",
-        "overwrite": false,
-        "html": false,
+        "overwrite": true,
+        "html": true,
         "json": true
       },
       "version": "6.2.0"
